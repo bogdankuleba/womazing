@@ -1,0 +1,111 @@
+.form-wrappper{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 918px;
+}
+
+.design-column-title{
+	font-size: 25px;
+	margin-bottom: 17.5px;
+}
+
+.design-column__search{
+	width: 100%;
+	max-width: 350px;
+	margin-bottom: 81px;
+}
+
+.design-column__search:last-child{
+	margin: 0;
+}
+
+.fomt-input_textarea{
+	height: 122px;
+	padding: 0;
+}
+
+.design-column__price{
+	width: 284px;
+	margin-bottom: 145px;
+}
+
+
+.design-column__item{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 20px;
+	font-size: 17px;
+}
+
+.design-column__item_header{
+	padding: 15px 0px 15px 20px;
+	font-size: 20px;
+}
+
+.design-column_item_bottom{
+	background: #F1EADC;
+	font-size: 20px;
+}
+
+.design-column__btn{
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000;
+	position: relative;
+}
+
+.design-column__btn-item{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	background: #000;
+}
+
+.design-column__availability{
+	display: flex;
+	align-items: center;
+}
+
+.design-column__text{
+	font-size: 17px;
+	margin-left: 14px;
+}
+
+.btn-payment{
+	margin: 47px 0px 0px 0px;
+}
+
+@media(max-width: 767px){
+	.form-wrappper{
+		flex-direction: column;		
+	}
+}
+
+@media(max-width: 550px){
+	.design-column__price{
+		width: 100%;
+	}
+
+	.design-column__item span{
+		font-size: 24px;
+	}
+
+	.design-column__btn{
+		width: 40px;
+		height: 40px;
+	}
+
+	.design-column__btn-item{
+		width: 20px;
+		height: 20px;
+	}
+
+	.design-column__text{
+		font-size: 22px;
+	}
+
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Womazing</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/basket.css">
+    <link rel="stylesheet" href="css/@media.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav" id="nav">
+            <div class="container container-flex">
+               <div class="burger">
+                    <span class="burger-btn"></span>
+                    <ul class="burger-menu">
+                        <li class="burger-menu__item">
+                            <a href="index.html" class="burger-menu__link" target="_blank">Главная</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="shop.html" class="burger-menu__link" target="_blank">Магазин</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="about.html" class="burger-menu__link" target="_blank">О бренде</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a href="contacts.html" class="burger-menu__link" target="_blank">Контакты</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <img class="cross burger-cross" src="img/cross.svg" alt="">
+                            <!--noindex-->
+                            <a class="tel tel-burger" target="_blank" href="tel:74958235412" target="_blank">+7 (495) 823-54-12</a>
+                            <!--/noindex-->                         
+                            <button type="button" class="phone phone_burger">
+                                 <img class="phone-phota" src="img/phone-black.svg" alt="">
+                                 <img class="phone-phota phone-phota_call" src="img/call.svg" alt="">   
+                            </button>                                    
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="logo" target="_blank">
+                    <img src="img/logo.svg" alt="Womazing">
+                </a>
+                <nav class="menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="index.html" target="_blank">Главная</a>                      
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="shop.html" target="_blank">Магазин</a>                      
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="about.html" target="_blank">О бренде</a>                       
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contacts.html" target="_blank">Контакты</a>                     
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">                   
+
+                   <button type="button" class="phone">
+                    <img class="phone-phota" src="img/phone-black.svg" alt="">
+                    <img class="phone-phota phone-phota_call" src="img/call.svg" alt="">    
+                  </button>     
+
+                   <div class="modal-window">
+                    <div class="overlay"></div>
+                      <form action="#" class="form" id="form-modal">
+                        <img class="cross form__cross" src="img/cross.svg" alt="">
+                        <h4 class="form__title">Заказать обратный звонок</h4>
+                        <input class="form-input" id="name" type="text" name="name" placeholder="Имя" required>
+                        <input class="form-input" id="email" type="email" name="email" placeholder="Email" required>
+                        <input class="form-input" id="phone" type="number"  name="tel" placeholder="Телефон" required>
+                        <button type="submit" class="btn btn_form" id="submit-help" data-submit>Заказать звонок</button>
+                     </form>
+                   </div>
+                  
+                   <!--noindex-->
+                   <a class="tel tel-header" target="_blank" href="tel:+74958235412" target="_blank">+7 (495) 823-54-12</a>
+                   <!--/noindex-->
+                   <a href="#" class="header-basket">
+                       <img src="img/basket.svg" alt="">
+                   </a> 
+                </div>
+                
+            </div>
+        </nav>
+        <div class="intro">
+            <div class="container">
+                <div class="intro-wrapper">
+                    <h1 class="intro-wrapper__title">Корзина</h1>
+                    <ul class="intro-wrapper-crumbs">
+                        <li calss="intro-wrapper-crumbs__item">
+                            <a class="intro-wrapper-crumbs__link" href="index.html">Главная</a>
+                        </li>
+                        <li  class="intro-wrapper-crumbs__item">
+                            <span class="intro-wrapper-crumbs__left">Корзина</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="basket" id="basket">
+        <div class="container">
+            <div class="table-header">
+                <p class="table-header__description table-header__description_width">Товар</p>
+                <p class="table-header__description">Цена</p>
+                <p class="table-header__description">Количество</p>
+                <p class="table-header__description">Всего</p>
+            </div>
+            <div class="table-basket">
+                <div class="table-basket-product">
+                    <img class="table-basket-product__cross" src="img/cross.svg" alt="">
+                    <img class="table-basket-product__img" src="img/product-1.jpg" alt="">
+                    <span class="table-basket-product__text">Футболка USA</span>
+                </div>
+                <div class="table-basket-number">
+                    <span class="table-basket-number__price">$129</span>
+                    <input class="table-basket-number__number" type="text" placeholder="1">
+                    <span class="table-basket-number__price">$129</span>
+                </div>
+            </div>
+            <div class="table-discounts">
+                <form action="#" class="table-discounts__coupon" id="form">
+                    <input class="form-input form-input_contacts" name="coupon" type="text" placeholder="Введите купон" required>
+                    <button class="btn btn_coupon" type="submit">Применить купон</button>
+                </form>
+                <button class="btn btn_coupon" type="submit">Обновить корзину</button>
+            </div>
+            <div class="table-results">
+                <div class="table-results-block">
+                    <h3 class="table-results-block__deckription">Итого:</h3>
+                    <span class="table-results-block__price">$129</span>
+                </div>
+                <button class="btn btn-results" type="submit">
+                    <a href="design.html">Оформить заказ</a>
+               </button>
+            </div>
+        </div>
+    </section>
+     <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-block">
+                    <a href="#" class="logo">
+                        <img src="img/logo.svg" alt="Womazing">
+                    </a>
+                    <span class="footer-block__rights">© Все права защищены</span>
+                    <!--noindex-->
+                    <a href="#" class="footer-block__link">
+                        <p>Политика конфиденциальности</p>
+                        <p>Публичная оферта</p>
+                    </a>
+                    <!--/noindex-->
+                </div>
+                <div class="footer-block">
+                    <nav class="menu menu_footer">
+                        <ul class="menu__list menu__list_footer">
+                            <li class="menu__item menu__item_active menu__item_footer">
+                                <a class="menu__link" href="index.html">Главная</a>                      
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a class="menu__link" target="_blank" href="shop.html">Магазин</a>
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a class="menu__link" target="_blank" href="about.html">О бренде</a>                        
+                            </li>
+                            <li class="menu__item menu__item_footer">
+                                <a class="menu__link" target="_blank" href="contacts.html">Контакты</a>                     
+                            </li>
+                        </ul>
+                   </nav>
+                   <ul class="menu-footer">
+                        <li class="menu-footer__item">
+                            <a href="#" target="_blank" class="menu-footer__link">Пальто</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" target="_blank" class="menu-footer__link">Свитшоты</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" target="_blank" class="menu-footer__link">Кардиганы</a>
+                        </li>
+                        <li class="menu-footer__item">
+                            <a href="#" target="_blank" class="menu-footer__link">Толстовки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-block footer-block_right">
+                    <!--noindex-->
+                     <a class="tel tel-footer" href="tel:+74958235412" target="_blank">+7 (495) 823-54-12</a>
+                     <!--/noindex-->
+                     <!--noindex-->
+                     <a class="email email_footer" href="mailto:hello@womazing.com" target="_blank">hello@womazing.com</a>
+                     <!--/noindex-->
+                     <div class="footer-block__networks">
+                       <!--noindex-->
+                        <a class="footer-block__link" target="_blank" href="https://www.instagram.com/">
+                            <img src="img/instagram.svg" alt="">
+                        </a>
+                        <!--/noindex-->
+                        <!--noindex-->
+                        <a class="footer-block__link" target="_blank" href="https://www.facebook.com">
+                            <img src="img/facebook.svg" alt="">
+                        </a>
+                        <!--/noindex-->
+                        <!--noindex-->
+                        <a class="footer-block__link"  target="_blank" href="https://twitter.com">
+                            <img src="img/twitter.svg" alt="">
+                        </a>
+                        <!--/noindex-->
+                     </div>
+                     
+                     <div class="footer-visa">
+                         <img src="img/visa.png" alt="">
+                     </div>                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="javascript/jquery-3.6.0.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="javascript/jquery.validate.min.js"></script>
+    <script src="javascript/main.js"></script>
+  </html>
+</body>  

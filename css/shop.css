@@ -1,0 +1,156 @@
+/*product
+=================================*/
+
+.product-wrapper{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.product-block{
+	width: 100%;
+	max-width: 350px;
+	position: relative;
+	margin-bottom: 65px;
+}
+
+.product-block::before{
+	content: url(../img/arrow-right.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 448px;
+	background: #6E9C9FA3;
+	opacity: 0;
+	transition: .5s ease opacity;
+}
+
+.product-block:hover::before{
+	opacity: 1;
+	transition: .5s ease opacity;
+}
+
+.product-block img{
+	width: 100%;
+	height: 448px;
+}
+
+.product-block__title{
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 24px;
+}
+
+.product-block__price{
+	font-weight: 500;
+	font-size: 15px;
+	color: #998E78;
+	margin-top: 7px;
+}
+
+.product-slider{
+	display: none;
+	margin-bottom: 65px;
+}
+
+.product-slider__item{
+	font-size: 25px;
+	padding: 19px 0;
+	border: 2px solid #000;
+}
+
+.product-slider__item.active{
+	background: black;
+	color: #fff;
+}
+
+.product-btns{
+	display: flex;
+	width: 100%;
+	max-width: 1050px;
+	margin-bottom: 92px;
+}
+
+.product-btns__item{
+	margin-right: 10px;
+	font-size: 17px;
+}
+
+.product-btns__item:last-child{
+	margin-right: 0;
+}
+
+
+.product-btns__item{
+	width: 100%;
+	padding: 19px 0;
+	border: 2px solid #000;
+	transition: .5s ease background, .5s ease color;
+}
+
+.product-btns__item.active,
+.product-btns__item:hover{
+	background: black;
+	color: #fff;
+	transition: .5s ease background, .5s ease color;
+}
+
+
+.product-indicator{
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	color: #808080;
+	letter-spacing: 1px;
+	margin-bottom: 65px;
+}
+
+.product-indicator__number{
+	margin: 0px 4px;
+}
+
+.product-pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.product-pagination:after{
+	content: '';
+	display: block;
+	background: url(../img/pagination-vector.svg) center;
+	width: 20px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.product-pagination__btn{
+	align-items: center;
+	width: 39px;
+	height: 39px;
+	border: 2px solid #000;
+	margin-right: 14px;
+	font-size: 17px;
+	transition: .5s ease background, .5s ease color;
+}
+
+
+.product-pagination__btn.active{
+	background: #000;
+	color: #fff;
+}
+
+.product-pagination__btn:hover{
+	background: #000;
+	color: #fff;
+	transition: .5s ease background, .5s ease color;
+}
+
+@media(max-width: 1200px){
+	.product-block:last-child{
+	   margin: 0 auto;
+   }
+}

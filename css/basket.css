@@ -1,0 +1,250 @@
+.table-discounts__coupon label{
+	display: block;
+	position: absolute;
+	transform: translateY(80px);
+	
+}
+
+.table-header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1010px;
+	border-bottom: 2px solid #CCCCCC;
+	padding-bottom: 26px;
+}
+
+.table-header__description{
+	font-size: 20px;
+}
+
+.table-header__description:last-child{
+	margin-right: 100px;
+}
+
+.table-header__description_width{
+	margin-right: 416px;
+}
+
+.table-basket{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0px 100px 0;
+	width: 100%;
+	max-width: 1010px;
+}
+
+.table-basket-product{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 341px;
+}
+
+.table-basket-product__cross{
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+
+.table-basket-product__img{
+	width: 100%;
+	max-width: 137px;
+	height: 179px;
+}
+
+.table-basket-product__text{
+	font-size: 17px;
+}
+
+.table-basket-number{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 514px;
+}
+
+.table-basket-number__price{
+	font-size: 17px;
+}
+
+.table-basket-number__price:last-child{
+	margin-right: 100px;
+}
+
+.table-basket-number__number{
+	display: block;
+	width: 47px;
+	height: 47px;
+	border: 1px solid #AFAFAF;
+	text-align: center;
+	margin-right: 10px;
+	color: #000;
+	font-size: 16px;
+	pointer-events: none;
+}
+
+.table-discounts{
+	display: flex;
+	justify-content: space-between;
+}
+
+.table-discounts__coupon{
+	display: flex;
+	width: 100%;
+	max-width: 515px;
+}
+
+.form-input_contacts{
+	width: 100%;
+	max-width: 255px;
+	margin: 0px 16px 0px 0;
+}
+
+.btn_coupon{
+	display: block;
+	width: 100%;
+	padding: 22px 0;
+	max-width: 243px;
+	font-size: 17px;
+	font-weight: 400;
+	background: transparent;
+	border: 1px solid #6E9C9F;
+	color: #6E9C9F;
+	margin: 0;
+	cursor: pointer;
+	transition: .5s ease background, .5s ease color;
+}
+
+.btn_coupon:hover{
+	background: #6E9C9F;
+	color: #fff;
+	transition: .5s ease background, .5s ease color;
+}
+
+.table-results{
+	display: flex;
+	width: 100%;
+	max-width: 538px;
+	margin-left: auto;
+	position: relative;
+	margin-top: 140px;
+}
+
+.table-results::before{
+	content: 'Подытог: $129';
+	position: absolute;
+	top: -45px;
+	left: 0;
+	font-size: 17px;
+
+}
+
+.table-results-block{
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	width: 100%;
+	max-width: 287px;
+	padding: 16px 51px 16px 31px;
+	background: #f1eadc;
+}
+
+.table-results-block__deckription{
+	margin-right: 70px;
+}
+
+.btn-results{
+	margin-right: 0;
+	padding: 0;
+}
+
+.btn-results a{
+	color: #fff;
+	padding: 24px 0;
+
+}
+
+@media(max-width: 992px){
+	.table-basket{
+		flex-direction: column;
+	}
+	.table-basket-product{
+		margin-bottom: 50px;
+	}
+	.table-header{
+		display: none;
+	}
+	.table-basket-number__price:last-child{
+		margin-right: 0;
+	}
+	.table-header__description_width{
+		margin-right: 100px;
+	}
+
+	.table-discounts__coupon label{
+		display: block;
+	    position: absolute;
+		transform: translateY(-30px);
+    }
+
+}
+
+@media(max-width: 848px){
+	.table-discounts{
+		flex-direction: column;
+	}
+
+	.form-input_contacts{
+		margin: 0px 0px 10px 0;
+	}
+
+	.table-discounts__coupon{
+		max-width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.table-discounts__search{
+		margin: 0 auto;
+	}
+
+	.btn_coupon{
+		margin: 10px auto 10px;
+	}
+}
+
+@media(max-width: 550px){
+	.table-basket-product__img{
+		width: 50%;
+	}
+	.table-header__description_width{
+		margin-right: 0;
+	}
+	.table-results{
+		flex-direction: column;
+		align-items: center;
+	}
+	.table-results-block{
+		max-width: 243px;
+		margin-bottom: 20px;
+	}
+	.table-results-block__deckription{
+		margin-right: 20px;
+	}
+	.btn-results{
+		margin: 0 auto;
+	}
+}
+
+@media(max-width: 320px){
+	.table-basket-product{
+		flex-direction: column;
+	}
+	.table-basket-product__img{
+		margin: 30px 0;
+	}
+}
